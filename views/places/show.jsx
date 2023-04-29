@@ -9,8 +9,8 @@ function show (data) {
             <h2>Rating</h2>
             <p>Currently Unrated</p>
             <h2>Description</h2>
-            <p>Located in {data.place.city}, {data.place.state}.</p>
-            <p>Serving {data.place.cuisines}</p>
+            <p>{data.place.showEstablished()}</p>
+            <p>Category: {data.place.cuisines}</p>
             <h2>Comments</h2>
             <p>No Comments Yet</p>
             <a href={`/places/${data.id}/edit`} className="btn btn-warning"> 
